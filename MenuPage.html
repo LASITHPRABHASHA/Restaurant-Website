@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Restaurant Website</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+     <!-- custom css file link  -->
+    <link rel="stylesheet" href="MenuPage.css">
+
+</head>
+
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+<section class="flex">
+
+        <a href="#" class="logo"> <i class="#"></i> FlavorJunction </a>
+
+
+<!-- These for the navigation bars  -->
+    <nav class="navbar">
+        <a href="#burgers">BURGERS</a>
+        <a href="#pizzas">PIZZA</a>
+        <a href="#pasta">PASTA</a>
+        <a href="#beverages">BEVERAGES</a>
+        <a href="#reviews">REVIEW</a>
+    </nav>
+
+<!-- These for the icons in navigation bars  -->
+   
+<!-- <div class="icons">
+    
+    <div class="fas fa-shopping-cart" id="cart-btn" name = "cart-btn"></div> -->
+
+
+    <!-- Add item1 to the shopping cart  -->
+   
+    <div class="shopping">
+        <img src="image/shopping.svg"> 
+         <span class="quantity">0</span>
+    </div>
+
+
+    <div class="card">
+        <h1>Your Cart</h1>
+        <ul class="listCard">
+        </ul>
+        <div class="checkOut">
+            <div class="total">0</div>
+            <h><a href="Order now.html" style="text-decoration:none">Order</a></h>
+
+            <div class="closeShopping">Close</div>
+        </div>
+    </div>
+    <!-- End the  shopping cart  -->
+
+</section>
+</header>
+
+
+<!--Here are the Food Items Section-->
+
+<section class="products" id="products">
+
+    <!--BURGERS SECTION-->
+
+
+    <h1 class="heading"><span> Burgers </span> </h1>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/Burguer1.png" alt="">
+                <h3> Chicken Burger </h3>
+                <div class="price"> Rs.2290</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <button onclick="addToCard(0)" class="btn" >add to cart</button>
+            </div>
+
+            <div class="swiper-slide box"  id="product-container">
+                <img src="image/Burguer4.png" alt="">
+                <h3>Beef Burger</h3>
+                <div class="price"> Rs.3290 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <button onclick="addToCard(1)" class="btn">add to cart</button>
+            </div>
+
+            <div class="swiper-slide box"  id="product-container">
+                <img src="image/Burguer2.png" alt="">
+                <h3>Mutton Burger</h3>
+                <div class="price">Rs.4450</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <button onclick="addToCard(2)" class="btn" id = "2" >add to cart</button>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/Burguer3.png" alt="">
+                <h3> Fish Burger</h3>
+                <div class="price"> Rs.2450</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button onclick="addToCard(3)" class="btn">add to cart</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--END OF THE BURGER SECTION-->
+
+    <!--START PIZZA SECTION-->
+
+    <h1 class="heading"><span> PIZZA </span> </h1>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/Pizza1.jpg" alt="">
+                <h3>Hot & Spicy Chicken </h3>
+                <div class="price"> Rs.1830</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <button onclick="addToCard(4)" class="btn">add to cart</button>  <!--JS function to add to the cart when click-->
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/Pizza 2.png" alt="">
+                <h3>Cheese & Chicken</h3>
+                <div class="price"> Rs.2690 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <button onclick="addToCard(5)" class="btn">add to cart</button> <!--JS function to add to the cart when click-->
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/Pizza 3.png" alt="">
+                <h3>Pepperoni Pizza</h3>
+                <div class="price">Rs.2590</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button onclick="addToCard(6)" class="btn">add to cart</button> <!--JS function to add to the cart when click-->
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/Pizza 4.png" alt="">
+                <h3> Margherita Pizza </h3>
+                <div class="price"> Rs.2590</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <button onclick="addToCard(7)" class="btn">add to cart</button> <!--JS function to add to the cart when click-->
+            </div>
+
+        </div>
+
+    </div>
+
+<!--END OF THE PIZZA SECTION-->
+
+<!--START THE PASTA SECTION-->
+
+    <h1 class="heading"> <span>PASTA</span> </h1>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/Pasta 1.png" alt="">
+                <h3>Cheese Pasta </h3>
+                <div class="price">Rs.1290</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <button onclick="addToCard(8)" class="btn">add to cart</button> <!--JS function to add to the cart when click-->
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/Pasta 2.png" alt="">
+                <h3>Chicken Pasta</h3>
+                <div class="price"> Rs.1690 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <button onclick="addToCard(9)" class="btn">add to cart</button> <!--JS function to add to the cart when click-->
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pasta 3.jpg" alt="">
+                <h3>Mushroom Pasta</h3>
+                <div class="price"> Rs.1490</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button onclick="addToCard(10)" class="btn">add to cart</button><!--JS function to add to the cart when click-->
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pasta 4.jpg" alt="">
+                <h3> Mix Pasts </h3>
+                <div class="price">Rs.2500</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <button onclick="addToCard(11)" class="btn">add to cart</button> <!--JS function to add to the cart when click-->
+            </div>
+
+        </div>
+
+    </div>
+<!--END THE PASTA SECTION-->
+
+
+
+<!--START THE Beverages SECTION-->
+
+<h1 class="heading"> <span> Beverages</span> </h1>
+
+<div class="swiper product-slider">
+
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide box">
+            <img src="image/smoothi1.png" alt="">
+            <h3>Pomegranate Juice </h3>
+            <div class="price">Rs.1290</div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <button onclick="addToCard(12)" class="btn">add to cart</button> <!--JS function to add to the cart when click-->
+        </div>
+
+        <div class="swiper-slide box">
+            <img src="image/smoothi2.png" alt="">
+            <h3> Orange Juice</h3>
+            <div class="price"> Rs.250 </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <button onclick="addToCard(13)" class="btn">add to cart</button> <!--JS function to add to the cart when click-->
+        </div>
+
+        <div class="swiper-slide box">
+            <img src="image/Matcha Lattes 1.png" alt="">
+            <h3>Latte</h3>
+            <div class="price"> Rs.350</div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <button onclick="addToCard(14)" class="btn">add to cart</button> <!--JS function to add to the cart when click-->
+        </div>
+
+        <div class="swiper-slide box">
+            <img src="image/Matcha Lattes 2.png" alt="">
+            <h3>Cofee</h3>
+            <div class="price">Rs.250</div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <button onclick="addToCard(15)" class="btn">add to cart</button> <!--JS function to add to the cart when click-->
+        </div>
+
+    </div>
+
+</div>
+<!--END THE Beverages SECTION-->
+
+
+
+ <!--START THE OTHER PRODUCTS SECTION1-->
+
+ <h1 class="heading"><span>  OTHER FOOD ITEMS</span> </h1>
+
+ <div class="swiper product-slider">
+
+     <div class="swiper-wrapper">
+
+         <div class="swiper-slide box">
+             <img src="image/Fries.png" alt="">
+             <h3>French Fries </h3>
+             <div class="price"> Rs.400</div>
+             <div class="stars">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+             </div>
+             <button onclick="addToCard(16)" class="btn">add to cart</button> <!--JS function to add to the cart when click-->
+         </div>
+
+         <div class="swiper-slide box">
+             <img src="image/Tacos1.png" alt="">
+             <h3>Tacos</h3>
+             <div class="price"> Rs.650 </div>
+             <div class="stars">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+             </div>
+             <button onclick="addToCard(17)" class="btn">add to cart</button> <!--JS function to add to the cart when click-->
+         </div>
+
+         <div class="swiper-slide box">
+             <img src="image/Sushi1.jpg" alt="">
+             <h3>Sushi</h3>
+             <div class="price"> Rs.550</div>
+             <div class="stars">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star-half-alt"></i>
+             </div>
+             <button onclick="addToCard(18)" class="btn">add to cart</button> <!--JS function to add to the cart when click-->
+         </div>
+
+         <div class="swiper-slide box">
+             <img src="image/Acai Bowl3.jpg" alt="">
+             <h3>Acai Bowl </h3>
+             <div class="price"> Rs.650</div>
+             <div class="stars">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+             </div>
+             <button onclick="addToCard(19)" class="btn">add to cart</button> <!--JS function to add to the cart when click-->
+         </div>
+      
+
+     </div>
+
+ </div>
+ <!--END OF THE OTHER PRODUCTS SECTION1-->
+
+
+  <!--START THE OTHER PRODUCTS SECTION2-->
+
+  <div class="swiper product-slider">
+ 
+      <div class="swiper-wrapper">
+ 
+          <div class="swiper-slide box">
+              <img src="image/AvacadoToast2.jpg" alt="">
+              <h3>Egg Avacado Toast </h3>
+              <div class="price">Rs.450</div>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <button onclick="addToCard(20)" class="btn">add to cart</button> <!--JS function to add to the cart when click-->
+          </div>
+ 
+          <div class="swiper-slide box">
+              <img src="image/Acai Bowl2.jpg" alt="">
+              <h3>Acai Bowl</h3>
+              <div class="price"> Rs.600 </div>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <button onclick="addToCard(21)" class="btn">add to cart</button> <!--JS function to add to the cart when click-->
+          </div>
+ 
+          <div class="swiper-slide box">
+              <img src="image/Quinowa Bowl.png" alt="">
+              <h3>Quinoa Bowls</h3>
+              <div class="price"> Rs.750 </div>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <button onclick="addToCard(22)" class="btn">add to cart</button> <!--JS function to add to the cart when click-->
+          </div>
+ 
+          <div class="swiper-slide box">
+              <img src="image/AvacadoToast1.jpg" alt="">
+              <h3>Avacado Toast</h3>
+              <div class="price">Rs.300 </div>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <button onclick="addToCard(23)" class="btn">add to cart</button> <!--JS function to add to the cart when click-->
+          </div>
+       
+ 
+      </div>
+ 
+  </div>
+  <!--END OF THE OTHER PRODUCTS SECTION2-->
+
+
+<!--Customer review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> customer's <span>review</span> </h1>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/Review Images/Review1.jpg" alt="">
+                <p>Absolutely delicious! The flavors were incredible, and the presentation was top-notch. Highly recommend this resturant .</p>
+                <h3>Olivia Reynolds</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/Review Images/Review2.jpg" alt="">
+                <p>Great atmosphere and friendly staff. The menu has a good variety, and the portions are generous. I left satisfied and happy..</p>
+                <h3>Daniel Mitchell</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/Review Images/Review3.jpg" alt="">
+                <p>Family-friendly and accommodating. The kids loved the Pasta menue, and we enjoyed our meals too. A great spot for all ages.</p>
+                <h3>Rachel Baker</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/Review Images/Review4.jpg" alt="">
+                <p>Fantastic service . The chef's specials were divine a culinary delight! perfect for a date night Can't wait to come back</p>
+                <h3>Brandon Harper</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Customer review section ends -->
+
+
+<!-- footer section starts  -->
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> FlavorJunction <i class="fas fa-shopping-basket"></i> </h3>
+            <p>Join With US.</p>
+            <div class="share">
+                <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                <a href="https://www.twitter.com/" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+    <!-- Footer section copyright section -->    
+    <div class="credit"> created by <span> Lasith </span> | all rights reserved </div>
+
+</section>
+
+<!-- custom js file link  -->
+<script src="Add to cart.js"></script>
+
+
+</body>
+</html>
